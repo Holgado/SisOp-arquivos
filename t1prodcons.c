@@ -15,6 +15,7 @@ char buffer[N];
 
 typedef struct {
 	char buf[N];
+	sem_t mutex;
 	sem_t full;
 	sem_t empty;
 }s_buff;
